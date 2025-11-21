@@ -1,38 +1,48 @@
 ## Estructura del proyecto
 
-ctive-farm/
-│
-├─ public/
-│
-├─ src/
-│  ├─ assets/                # Imágenes, íconos o JSON local
-│  │   └─ animals.json
-│  │
-│  ├─ components/            # Componentes reutilizables y visuales
-│  │   ├─ Alert.jsx          # Mensajes de error, éxito o información
-│  │   ├─ Loader.jsx         # Indicador de carga
-│  │   ├─ Layout.jsx         # Contenedor principal de la app
-│  │   ├─ AnimalCard.jsx     # Muestra datos de un animal individual
-│  │   ├─ AnimalList.jsx     # Renderiza la lista de animales
-│  │   └─ AnimalForm.jsx     # Formulario controlado con validaciones
-│  │
-│  ├─ pages/                 # Vistas o pantallas principales
-│  │   └─ Farm.jsx           # Página principal (usa useEffect + lógica)
-│  │
-│  ├─ services/              # Comunicación con la API (Axios o Fetch)
-│  │   └─ animalsApi.js
-│  │
-│  ├─ hooks/ (opcional)      # Custom hooks para lógica reutilizable
-│  │   └─ useFetchAnimals.js
-│  │
-│  ├─ App.jsx                # Enrutador principal o punto de entrada de componentes
-│  ├─ main.jsx               # Renderiza la app dentro del root DOM
-│  ├─ index.css              # Estilos globales (reset, tipografía, colores)
-│  └    ─ variables.css (opcional) # Paleta, dark mode, etc.
-│
-├─ package.json
-├─ vite.config.js
-└─ README.md
+ src
+ ┣  components
+ │  ┣  AnimalCard
+ │  │  ┗  AnimalCard.jsx
+ │  ┣  AnimalForm
+ │  │  ┗  AnimalForm.jsx
+ │  ┣  Layout
+ │  │  ┣  Header.jsx
+ │  │  ┗  Footer.jsx
+ │  ┗  Loading.jsx
+ │
+ ┣  pages
+ │  ┣  AnimalsPage.jsx
+ │  ┗  CreateAnimalPage.jsx
+ │
+ ┣  api
+ │  ┗  animalsApi.js
+ │
+ ┣  hooks
+ │  ┗  useAnimals.js
+ │
+ ┣  utils
+ │  ┗  validations.js
+ │
+ ┣  styles
+ │  ┗  global.css
+ │
+ ┣  App.jsx
+ ┣  main.jsx
+ ┗  index.html
+ |
+ |
+ |.env
+ |.gitignore
+ |eslint.config
+ |index.html
+ |
+ |package
+ |package-lock
+ |vite.config
+ |
+ |
+
 
 
 ## manejo de estados (useState)
