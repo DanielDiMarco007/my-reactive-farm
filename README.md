@@ -29,6 +29,10 @@ ctive-farm/
 │  ├─ main.jsx               # Renderiza la app dentro del root DOM
 │  ├─ index.css              # Estilos globales (reset, tipografía, colores)
 │  └    ─ variables.css (opcional) # Paleta, dark mode, etc.
+│
+├─ package.json
+├─ vite.config.js
+└─ README.md
 
 
 ## manejo de estados (useState)
@@ -76,7 +80,3 @@ Respuesta:
 
 
 
-│
-├─ package.json
-├─ vite.config.js
-└─ README.md
